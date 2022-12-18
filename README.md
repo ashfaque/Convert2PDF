@@ -67,7 +67,7 @@ all_pdfs_path_tuple = (
                     , f'{os.getcwd()}/file 4.pdf'
                     , f'{os.getcwd()}/file 5.pdf'
                 )
-merged = mergePdfs(*all_pdfs_path_tuple, pdf_output_file_path=f'{os.getcwd()}/output_merged_file.pdf')
+merged = mergePdfs(*all_pdfs_path_tuple, output_pdf_file_path=f'{os.getcwd()}/output_merged_file.pdf')
 ```
 
 
