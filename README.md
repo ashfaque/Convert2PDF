@@ -6,7 +6,7 @@ pip install Convert2PDF
 ```
 
 ## How to import
-```sh
+```python3
 from Convert2PDF.ConvertToPDF import docx2pdfConvert, pptx2pdfConvert, img2pdfConvert, bmp2pdfConvert, txt2pdfConvert, mergePdfs
 ```
 
@@ -24,21 +24,21 @@ default-jre
 
 
 ### Convert from doc or docx to pdf format.
-```sh
+```python3
 docx = docx2pdfConvert(f'{os.getcwd()}/file name.docx', f'{os.getcwd()}/output_dir/')
 doc = docx2pdfConvert(f'{os.getcwd()}/file name.doc', f'{os.getcwd()}/output_dir/')
 ```
 
 
 ### Convert from ppt or pptx to pdf format
-```sh
+```python3
 pptx = pptx2pdfConvert(f'{os.getcwd()}/file name.pptx', f'{os.getcwd()}/output/')
 ppt = pptx2pdfConvert(f'{os.getcwd()}/file name.ppt', f'{os.getcwd()}/output/')
 ```
 
 
 ### Convert from jpeg, jpg or png ot pdf format.
-```sh
+```python3
 jpeg = img2pdfConvert(f'{os.getcwd()}/file name.jpeg', f'{os.getcwd()}/output/file name.pdf')
 jpg = img2pdfConvert(f'{os.getcwd()}/file name.jpg', f'{os.getcwd()}/output/file name.pdf')
 png = img2pdfConvert(f'{os.getcwd()}/file name.png', f'{os.getcwd()}/output/file name.pdf')
@@ -46,19 +46,19 @@ png = img2pdfConvert(f'{os.getcwd()}/file name.png', f'{os.getcwd()}/output/file
 
 
 ### Convert from bmp to pdf format.
-```sh
+```python3
 bmp = bmp2pdfConvert(f'{os.getcwd()}/file name.bmp', f'{os.getcwd()}/output/file name.pdf')
 ```
 
 
 ### Convert from txt to pdf format.
-```sh
+```python3
 txt = txt2pdfConvert(f'{os.getcwd()}/file name.txt', f'{os.getcwd()}/output/file name.pdf')
 ```
 
 
 ### Merge all pdf files to one pdf file.
-```sh
+```python3
 all_pdfs_path_tuple = (
                     f'{os.getcwd()}/file 1.pdf'
                     , f'{os.getcwd()}/file 2.pdf'
