@@ -11,7 +11,7 @@ def subprocess_run(args : list) -> bool:
 
 
 # ? docx / doc to pdf
-def docx2pdfConvert(doc_file_path, output_pdf_folder_path):
+def docx2pdfConvert(doc_file_path : str, output_pdf_folder_path : str) -> bool:
     ''' HOW TO USE :-
     docx = docx2pdfConvert(f'{os.getcwd()}/file name.docx', f'{os.getcwd()}/output_dir/')
     doc = docx2pdfConvert(f'{os.getcwd()}/file name.doc', f'{os.getcwd()}/output_dir/')
@@ -39,7 +39,7 @@ def docx2pdfConvert(doc_file_path, output_pdf_folder_path):
 
 
 # ? pptx / ppt to pdf
-def pptx2pdfConvert(ppt_file_path, output_pdf_folder_path):
+def pptx2pdfConvert(ppt_file_path : str, output_pdf_folder_path : str) -> bool:
     ''' HOW TO USE :-
     pptx = pptx2pdfConvert(f'{os.getcwd()}/file name.pptx', f'{os.getcwd()}/output/')
     ppt = pptx2pdfConvert(f'{os.getcwd()}/file name.ppt', f'{os.getcwd()}/output/')
@@ -68,7 +68,7 @@ def pptx2pdfConvert(ppt_file_path, output_pdf_folder_path):
 
 
 # ? jpeg to pdf
-def img2pdfConvert(jpeg_file_path, output_pdf_file_path):
+def img2pdfConvert(jpeg_file_path : str, output_pdf_file_path : str) -> bool:
     '''
     jpeg = img2pdfConvert(f'{os.getcwd()}/file name.jpeg', f'{os.getcwd()}/output/file name.pdf')
     jpg = img2pdfConvert(f'{os.getcwd()}/file name.jpg', f'{os.getcwd()}/output/file name.pdf')
@@ -90,7 +90,7 @@ def img2pdfConvert(jpeg_file_path, output_pdf_file_path):
 
 
 # ? bmp to pdf
-def bmp2pdfConvert(bmp_file_path, output_pdf_file_path):
+def bmp2pdfConvert(bmp_file_path : str, output_pdf_file_path : str) -> bool:
     '''
     bmp = bmp2pdfConvert(f'{os.getcwd()}/file name.bmp', f'{os.getcwd()}/output/file name.pdf')
     '''
@@ -109,7 +109,7 @@ def bmp2pdfConvert(bmp_file_path, output_pdf_file_path):
 
 
 # ? txt to pdf
-def txt2pdfConvert(txt_file_path, output_pdf_file_path):
+def txt2pdfConvert(txt_file_path : str, output_pdf_file_path : str) -> bool:
     '''
     https://stackoverflow.com/a/64877141/16377463
 
@@ -165,7 +165,7 @@ def txt2pdfConvert(txt_file_path, output_pdf_file_path):
 # https://stackoverflow.com/questions/3444645/merge-pdf-files
 
 # ? Merge all pdf file to one pdf file
-def mergePdfs(*pdf_paths : tuple, output_pdf_file_path):
+def mergePdfs(*pdf_paths : tuple, output_pdf_file_path : str) -> bool:
     '''
     all_pdfs_path_tuple = (
                         f'{os.getcwd()}/file 1.pdf'
