@@ -5,7 +5,7 @@
 # Create new relase on GitHub
 # Activate py env
 # pip install twine
-# twine upload dist/*
+# twine upload --repository Convert2PDF dist/*
 
 
 # from distutils.core import setup
