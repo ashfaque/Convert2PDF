@@ -2,7 +2,7 @@
 # Run `python3 setup.py sdist`
 # Create new py3 env and install contents of dist/ manually from pip `pip install ~/proj/dist/filename.tar.gz` and test it.
 # Push the changes
-# Create new relase on GitHub
+# Create new release on GitHub
 # Activate py env
 # pip install twine
 # twine upload --repository Convert2PDF dist/*
