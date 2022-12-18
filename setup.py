@@ -5,7 +5,7 @@
 # Create new release on GitHub
 # Activate py env
 # pip install twine
-# twine upload --repository Convert2PDF dist/*
+# twine upload --repository pypi dist/*    # https://truveris.github.io/articles/configuring-pypirc/
 
 
 # from distutils.core import setup
