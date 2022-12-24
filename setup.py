@@ -17,8 +17,8 @@ with open("README.md", "r") as fh:
 setup(
   name = 'Convert2PDF',         # How you named your package folder (MyLib)
   packages = ['Convert2PDF'],   # Chose the same as "name"
-  version = '0.2',      # Start with a small number and increase it with every change you make
-  download_url = 'https://github.com/ashfaque/Convert2PDF/archive/refs/tags/v_02.tar.gz',    # Link of your source code
+  version = '0.3',      # Start with a small number and increase it with every change you make
+  download_url = 'https://github.com/ashfaque/Convert2PDF/archive/refs/tags/v_03.tar.gz',    # Link of your source code
   license='GNU GPLv3',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository or, https://choosealicense.com/
   description = 'Convert from different file formats to PDF format.',   # Give a short description about your library
   long_description_content_type = "text/markdown",    # Really important if you are using README.md format.

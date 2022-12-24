@@ -179,8 +179,9 @@ def mergePdfs(*pdf_paths : tuple, output_pdf_file_path : str) -> bool:
     '''
 
     try:
-        from PyPDF2 import PdfFileMerger, PdfMerger
+        from PyPDF2 import PdfFileMerger
         merger = PdfFileMerger()
+        # from PyPDF2 import PdfMerger
         # merger = PdfMerger()
         [merger.append(pdf) for pdf in pdf_paths]
         with open(output_pdf_file_path, 'wb') as newPdfFile:
